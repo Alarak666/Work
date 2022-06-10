@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.SystemModule.AboutInfo">
+      <OwnMembers>
+        <Member Name="Company" Caption="Company" />
+        <Member Name="Description" Caption="Description" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditDataItemPersistent">
+      <OwnMembers>
+        <Member Name="Description" Caption="Description" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.BaseObject">
+      <OwnMembers>
+        <Member Name="Oid" Caption="Oid" />
+      </OwnMembers>
+    </Class>
+    <Class Name="ERPGE.Module.BusinessObjects.BankAcquirers">
+      <OwnMembers>
+        <Member Name="FullName" Caption="სრული დასახელება" />
+      </OwnMembers>
+    </Class>
+    <Class Name="ERPGE.Module.BusinessObjects.Company" Caption="Company">
+      <OwnMembers>
+        <Member Name="Description" Caption="Description" />
+        <Member Name="FullName" Caption="სრული დასახელება" />
+        <Member Name="RegistrationDate" Caption="RegistrationDate" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Views>
+    <DetailView Id="AuditDataItemPersistent_DetailView">
+      <Items>
+        <PropertyEditor Id="Description" Caption="აღწერა" />
+      </Items>
+    </DetailView>
+    <ListView Id="AuditDataItemPersistent_ListView">
+      <Columns>
+        <ColumnInfo Id="Description" Caption="აღწერა" />
+      </Columns>
+    </ListView>
+    <ListView Id="AuditedObjectWeakReference_AuditDataItems_ListView">
+      <Columns>
+        <ColumnInfo Id="Description" Caption="აღწერა" />
+      </Columns>
+    </ListView>
+    <DetailView Id="BankAcquirers_DetailView">
+      <Items>
+        <PropertyEditor Id="BankAccount" Caption="საბანკო ანგარიში" />
+        <PropertyEditor Id="FullName" Caption="სრული დასახელება" />
+      </Items>
+    </DetailView>
+    <ListView Id="BankAcquirers_ListView">
+      <Columns>
+        <ColumnInfo Id="FullName" Caption="სრული დასახელება" />
+        <ColumnInfo Id="BankAccount" Caption="საბანკო ანგარიში" />
+      </Columns>
+    </ListView>
+    <ListView Id="BankAcquirers_LookupListView">
+      <Columns>
+        <ColumnInfo Id="FullName" Caption="სრული დასახელება" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Company_DetailView">
+      <Items>
+        <PropertyEditor Id="ActualAddress" Caption="ფაქტიური მისამართი" />
+        <PropertyEditor Id="BankAccount" Caption="საბანკო ანგარიში" />
+        <PropertyEditor Id="Description" Caption="Description" />
+        <PropertyEditor Id="Email" Caption="ელ. ფოსტა" />
+        <PropertyEditor Id="FullName" Caption="სრული დასახელება" />
+        <PropertyEditor Id="LegalAddress" Caption="იურიდიული მისამართი" />
+        <PropertyEditor Id="LegalForm" Caption="სამართლებრივი ფორმა" />
+        <PropertyEditor Id="RegistrationDate" Caption="RegistrationDate" />
+        <PropertyEditor Id="TelephoneNumber" Caption="ტელეფონის ნომერი" />
+        <PropertyEditor Id="Tin" Caption="ს/ნ" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Company" Caption="Company" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Company_ListView">
+      <Columns>
+        <ColumnInfo Id="FullName" Caption="სრული დასახელება" />
+        <ColumnInfo Id="Description" Caption="აღწერა" />
+        <ColumnInfo Id="RegistrationDate" Caption="რეგისტრაციის თარიღი" />
+        <ColumnInfo Id="Tin" Caption="ს/ნ" />
+        <ColumnInfo Id="LegalForm" Caption="სამართლებრივი ფორმა" />
+        <ColumnInfo Id="BankAccount" Caption="საბანკო ანგარიში" />
+        <ColumnInfo Id="LegalAddress" Caption="იურიდიული მისამართი" />
+        <ColumnInfo Id="ActualAddress" Caption="ფაქტიური მისამართი" />
+        <ColumnInfo Id="TelephoneNumber" Caption="ტელეფონის ნომერი" />
+        <ColumnInfo Id="Email" Caption="ელ. ფოსტა" />
+      </Columns>
+    </ListView>
+    <ListView Id="Company_LookupListView">
+      <Columns>
+        <ColumnInfo Id="FullName" Caption="სრული დასახელება" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
+      <Columns>
+        <ColumnInfo Id="ErrorMessage" Caption="Description" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

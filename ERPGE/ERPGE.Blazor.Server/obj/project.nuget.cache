@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "68IrUacMLpeoqPka/sND78zar7F/YTjuSWqJv37h3orrRfwfbUalZeM1BdvdPzwu/b6oJzLc2n4Dvo/h7FpnVQ==",
+  "dgSpecHash": "Jvv/fB5AGbkYwKV5g3C7bzGSwv26QIKW1D+5taUsMNDWwjG8pX3AKoXGfMxUWWiTGq1duRm0ffiHGsVaiNZfhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\popel\\source\\repos\\XAF_project\\ERPGE\\ERPGE.Blazor.Server\\ERPGE.Blazor.Server.csproj",
+  "projectFilePath": "D:\\Git\\Work\\ERPGE\\ERPGE.Blazor.Server\\ERPGE.Blazor.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\popel\\.nuget\\packages\\azure.core\\1.4.1\\azure.core.1.4.1.nupkg.sha512",
     "C:\\Users\\popel\\.nuget\\packages\\azure.identity\\1.2.3\\azure.identity.1.2.3.nupkg.sha512",

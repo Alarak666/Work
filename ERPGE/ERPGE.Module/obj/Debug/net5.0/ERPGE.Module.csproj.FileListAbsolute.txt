@@ -1,0 +1,14 @@
+D:\Git\Work\ERPGE\ERPGE.Module\bin\Debug\net5.0\ERPGE.Module.deps.json
+D:\Git\Work\ERPGE\ERPGE.Module\bin\Debug\net5.0\ERPGE.Module.dll
+D:\Git\Work\ERPGE\ERPGE.Module\bin\Debug\net5.0\ref\ERPGE.Module.dll
+D:\Git\Work\ERPGE\ERPGE.Module\bin\Debug\net5.0\ERPGE.Module.pdb
+D:\Git\Work\ERPGE\ERPGE.Module\obj\Debug\net5.0\ERPGE.Module.csproj.AssemblyReference.cache
+D:\Git\Work\ERPGE\ERPGE.Module\obj\Debug\net5.0\ERPGE.Module.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\Work\ERPGE\ERPGE.Module\obj\Debug\net5.0\ERPGE.Module.AssemblyInfoInputs.cache
+D:\Git\Work\ERPGE\ERPGE.Module\obj\Debug\net5.0\ERPGE.Module.AssemblyInfo.cs
+D:\Git\Work\ERPGE\ERPGE.Module\obj\Debug\net5.0\ERPGE.Module.csproj.CoreCompileInputs.cache
+D:\Git\Work\ERPGE\ERPGE.Module\obj\Debug\net5.0\ERPGE.Module.dll
+D:\Git\Work\ERPGE\ERPGE.Module\obj\Debug\net5.0\ref\ERPGE.Module.dll
+D:\Git\Work\ERPGE\ERPGE.Module\obj\Debug\net5.0\ERPGE.Module.pdb
+D:\Git\Work\ERPGE\ERPGE.Module\bin\Debug\net5.0\ka\ERPGE.Module.resources.dll
+D:\Git\Work\ERPGE\ERPGE.Module\obj\Debug\net5.0\ka\ERPGE.Module.resources.dll

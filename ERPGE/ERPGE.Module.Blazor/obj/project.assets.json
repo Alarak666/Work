@@ -11057,11 +11057,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\popel\\source\\repos\\XAF_project\\ERPGE\\ERPGE.Module.Blazor\\ERPGE.Module.Blazor.csproj",
+      "projectUniqueName": "D:\\Git\\Work\\ERPGE\\ERPGE.Module.Blazor\\ERPGE.Module.Blazor.csproj",
       "projectName": "ERPGE.Module.Blazor",
-      "projectPath": "C:\\Users\\popel\\source\\repos\\XAF_project\\ERPGE\\ERPGE.Module.Blazor\\ERPGE.Module.Blazor.csproj",
+      "projectPath": "D:\\Git\\Work\\ERPGE\\ERPGE.Module.Blazor\\ERPGE.Module.Blazor.csproj",
       "packagesPath": "C:\\Users\\popel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\popel\\source\\repos\\XAF_project\\ERPGE\\ERPGE.Module.Blazor\\obj\\",
+      "outputPath": "D:\\Git\\Work\\ERPGE\\ERPGE.Module.Blazor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -11087,8 +11087,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\popel\\source\\repos\\XAF_project\\ERPGE\\ERPGE.Module\\ERPGE.Module.csproj": {
-              "projectPath": "C:\\Users\\popel\\source\\repos\\XAF_project\\ERPGE\\ERPGE.Module\\ERPGE.Module.csproj"
+            "D:\\Git\\Work\\ERPGE\\ERPGE.Module\\ERPGE.Module.csproj": {
+              "projectPath": "D:\\Git\\Work\\ERPGE\\ERPGE.Module\\ERPGE.Module.csproj"
             }
           }
         }

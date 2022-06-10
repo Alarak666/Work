@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+V6qBpE+YPjZWEC0IGQr6xu2jQ4kK7HoNwe1TKE3JGKZ020XyYTytXlded4EFjISPke5pGji4SJIsSvPSxg+6g==",
+  "dgSpecHash": "D2wGmhu7KgiMiCf1FN4UMzQoo4/J8SsEx7z3YRsTw1zTlEbwluXioUOHpPJbtUvM/ezOKzMlY2ZL6RNvBJyeBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\popel\\source\\repos\\XAF_project\\ERPGE\\ERPGE.Module\\ERPGE.Module.csproj",
+  "projectFilePath": "D:\\Git\\Work\\ERPGE\\ERPGE.Module\\ERPGE.Module.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages\\devexpress.charts\\21.2.6\\devexpress.charts.21.2.6.nupkg.sha512",
     "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages\\devexpress.charts.core\\21.2.6\\devexpress.charts.core.21.2.6.nupkg.sha512",

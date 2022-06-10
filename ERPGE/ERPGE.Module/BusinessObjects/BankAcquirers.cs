@@ -42,13 +42,13 @@ namespace ERPGE.Module.BusinessObjects
         string owner;
         string uniqueCode;
         object fullName;
-        [XafDisplayName("Name"), ToolTip("Message")]
+        [XafDisplayName("FullName"), ToolTip("Message")]
         public object FullName
         {
             get => fullName;
             set => SetPropertyValue(nameof(FullName), ref fullName, value);
         }
-
+        [XafDisplayName("UniqueCode"), ToolTip("Message")]
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
         public string UniqueCode
         {

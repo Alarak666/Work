@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="BankAccount_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BankAccount">
+              <LayoutItem Id="BIC" Index="0" RelativeSize="6.75422138836773" />
+              <LayoutItem Id="Name" Index="1" RelativeSize="4.878048780487805" />
+              <LayoutItem Id="Bank" Index="2" RelativeSize="88.36772983114446" Removed="True" />
+              <LayoutItem Id="Owner" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

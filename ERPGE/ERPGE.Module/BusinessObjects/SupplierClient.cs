@@ -33,19 +33,104 @@ namespace ERPGE.Module.BusinessObjects
             base.AfterConstruction();
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
-        //private string _PersistentProperty;
-        //[XafDisplayName("My display name"), ToolTip("My hint message")]
-        //[ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)]
-        //[Persistent("DatabaseColumnName"), RuleRequiredField(DefaultContexts.Save)]
-        //public string PersistentProperty {
-        //    get { return _PersistentProperty; }
-        //    set { SetPropertyValue(nameof(PersistentProperty), ref _PersistentProperty, value); }
-        //}
 
-        //[Action(Caption = "My UI Action", ConfirmationMessage = "Are you sure?", ImageName = "Attention", AutoCommit = true)]
-        //public void ActionMethod() {
-        //    // Trigger a custom business logic for the current record in the UI (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112619.aspx).
-        //    this.PersistentProperty = "Paid";
-        //}
+        string additional;
+        string other;
+        string email;
+        string telephoneNumber;
+        string actualAddress;
+        string legalAddress;
+        string mainBankAccount;
+        string country;
+        string legalForm;
+        string tIN;
+        string vatTaxable;
+        string fullName;
+        string description;
+        string parent;
+
+        public string Parent
+        {
+            get => parent;
+            set => SetPropertyValue(nameof(Parent), ref parent, value);
+        }
+
+        public string Description
+        {
+            get => description;
+            set => SetPropertyValue(nameof(Description), ref description, value);
+        }
+
+        public string FullName
+        {
+            get => fullName;
+            set => SetPropertyValue(nameof(FullName), ref fullName, value);
+        }
+
+        public string VatTaxable
+        {
+            get => vatTaxable;
+            set => SetPropertyValue(nameof(VatTaxable), ref vatTaxable, value);
+        }
+
+        public string TIN
+        {
+            get => tIN;
+            set => SetPropertyValue(nameof(TIN), ref tIN, value);
+        }
+
+        public string LegalForm
+        {
+            get => legalForm;
+            set => SetPropertyValue(nameof(LegalForm), ref legalForm, value);
+        }
+
+        public string Country
+        {
+            get => country;
+            set => SetPropertyValue(nameof(Country), ref country, value);
+        }
+
+        public string MainBankAccount
+        {
+            get => mainBankAccount;
+            set => SetPropertyValue(nameof(MainBankAccount), ref mainBankAccount, value);
+        }
+
+        public string LegalAddress
+        {
+            get => legalAddress;
+            set => SetPropertyValue(nameof(LegalAddress), ref legalAddress, value);
+        }
+
+        public string ActualAddress
+        {
+            get => actualAddress;
+            set => SetPropertyValue(nameof(ActualAddress), ref actualAddress, value);
+        }
+
+        public string TelephoneNumber
+        {
+            get => telephoneNumber;
+            set => SetPropertyValue(nameof(TelephoneNumber), ref telephoneNumber, value);
+        }
+
+        public string Email
+        {
+            get => email;
+            set => SetPropertyValue(nameof(Email), ref email, value);
+        }
+
+        public string Other
+        {
+            get => other;
+            set => SetPropertyValue(nameof(Other), ref other, value);
+        }
+        
+        public string Additional
+        {
+            get => additional;
+            set => SetPropertyValue(nameof(Additional), ref additional, value);
+        }
     }
 }

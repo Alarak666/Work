@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="BankAccount_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="AccountNumber" Caption="ანგარიშის ნომერი" />
+      </Items>
+    </DetailView>
+    <DetailView Id="BankAcquirers_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="CreatedUSer" Caption="რეგისტრაციის ავტორი" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

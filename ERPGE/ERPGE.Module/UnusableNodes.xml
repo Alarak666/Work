@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="BankAccount_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="CreatedDate" Removed="True" />
+        <PropertyEditor Id="CreatedUser" Removed="True" />
+        <PropertyEditor Id="FullName" Removed="True" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

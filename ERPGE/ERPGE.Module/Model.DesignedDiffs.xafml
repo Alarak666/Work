@@ -17,5 +17,152 @@
   </SchemaModules>
   <Views>
     <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <DetailView Id="BankAccount_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100" Direction="Vertical" Caption="SimpleEditors">
+            <LayoutGroup Id="BankAccount" ShowCaption="True" Caption="Bank Account" Direction="Vertical" Index="0" RelativeSize="100" IsNewNode="True" Removed="True">
+              <LayoutItem Id="Owner" ViewItem="Owner" Index="0" RelativeSize="7.453416149068323" IsNewNode="True" />
+              <LayoutItem Id="AccountNumber" ViewItem="AccountNumber" Index="1" RelativeSize="5.383022774327122" IsNewNode="True" />
+              <LayoutItem Id="BIC" ViewItem="BIC" Index="2" RelativeSize="5.383022774327122" IsNewNode="True" />
+              <LayoutItem Id="Name" ViewItem="Name" Index="3" RelativeSize="5.383022774327122" IsNewNode="True" />
+              <LayoutItem Id="Bank" ViewItem="Bank" Index="4" RelativeSize="76.3975155279503" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CashRegister_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="CashRegister" RelativeSize="100">
+              <LayoutGroup Id="CashRegister_col1" RelativeSize="49.897750511247445">
+                <LayoutItem Id="FullName" RelativeSize="6.968641114982578" />
+                <LayoutItem Id="UniqueCode" RelativeSize="4.878048780487805" />
+                <LayoutItem Id="OwnerParent" RelativeSize="4.878048780487805" />
+                <LayoutItem Id="Organization" RelativeSize="83.27526132404181" />
+              </LayoutGroup>
+              <LayoutGroup Id="CashRegister_col2" RelativeSize="50.102249488752555">
+                <LayoutItem Id="Currency" RelativeSize="6.968641114982578" />
+                <LayoutItem Id="Division" RelativeSize="4.878048780487805" />
+                <LayoutItem Id="CreatedDate" RelativeSize="4.878048780487805" />
+                <LayoutItem Id="CreatedUser" RelativeSize="83.27526132404181" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Company_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" Direction="Vertical">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100" Direction="Vertical">
+            <LayoutGroup Id="Company" ShowCaption="True" Index="0" RelativeSize="100" IsNewNode="True" Removed="True">
+              <TabbedGroup Id="Item2" CaptionLocation="Top" Index="0" RelativeSize="35.54006968641115" IsNewNode="True">
+                <LayoutGroup Id="Company_col1" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutItem Id="FullName" ViewItem="FullName" Index="0" RelativeSize="20.689655172413794" IsNewNode="True" />
+                  <LayoutItem Id="Description" ViewItem="Description" Index="1" RelativeSize="14.942528735632184" IsNewNode="True" />
+                  <LayoutItem Id="RegistrationDate" ViewItem="RegistrationDate" Index="2" RelativeSize="14.942528735632184" IsNewNode="True" />
+                  <LayoutItem Id="Tin" ViewItem="Tin" Index="3" RelativeSize="14.942528735632184" IsNewNode="True" />
+                  <LayoutItem Id="LegalForm" ViewItem="LegalForm" Index="4" RelativeSize="13.218390804597702" IsNewNode="True" />
+                  <LayoutItem Id="BankAccount" ViewItem="BankAccount" Index="5" RelativeSize="21.264367816091955" IsNewNode="True" />
+                </LayoutGroup>
+              </TabbedGroup>
+              <TabbedGroup Id="Item3" CaptionLocation="Top" Index="1" RelativeSize="64.45993031358886" IsNewNode="True">
+                <LayoutGroup Id="Company_col2" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutItem Id="LegalAddress" ViewItem="LegalAddress" Index="0" RelativeSize="11.904761904761905" IsNewNode="True" />
+                  <LayoutItem Id="ActualAddress" ViewItem="ActualAddress" Index="1" RelativeSize="8.333333333333334" IsNewNode="True" />
+                  <LayoutItem Id="TelephoneNumber" ViewItem="TelephoneNumber" Index="2" RelativeSize="8.333333333333334" IsNewNode="True" />
+                  <LayoutItem Id="Email" ViewItem="Email" Index="3" RelativeSize="71.42857142857143" IsNewNode="True" />
+                </LayoutGroup>
+              </TabbedGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SupplierClient_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="SupplierClient" RelativeSize="100" Direction="Vertical">
+              <TabbedGroup Id="Item2" CaptionLocation="Top" Index="0" RelativeSize="48.94736842105263" IsNewNode="True">
+                <LayoutGroup Id="Item1" ShowCaption="False" CaptionLocation="Top" Direction="Vertical" Index="0" RelativeSize="100" Caption="Item1" IsNewNode="True">
+                  <LayoutItem Id="Parent" ViewItem="Parent" Index="0" RelativeSize="16.3265306122449" IsNewNode="True" />
+                  <LayoutItem Id="Description" ViewItem="Description" Index="1" RelativeSize="11.428571428571429" IsNewNode="True" />
+                  <LayoutItem Id="FullName" ViewItem="FullName" Index="2" RelativeSize="11.428571428571429" IsNewNode="True" />
+                  <LayoutItem Id="VatTaxable" ViewItem="VatTaxable" Index="3" RelativeSize="11.428571428571429" IsNewNode="True" />
+                  <LayoutItem Id="TIN" ViewItem="TIN" Index="4" RelativeSize="11.428571428571429" IsNewNode="True" />
+                  <LayoutItem Id="LegalForm" ViewItem="LegalForm" Index="5" RelativeSize="11.428571428571429" IsNewNode="True" />
+                  <LayoutItem Id="Country" ViewItem="Country" Index="6" RelativeSize="11.428571428571429" IsNewNode="True" />
+                  <LayoutItem Id="MainBankAccount" ViewItem="MainBankAccount" Index="7" RelativeSize="15.10204081632653" IsNewNode="True" />
+                </LayoutGroup>
+              </TabbedGroup>
+              <TabbedGroup Id="Item4" CaptionLocation="Top" Index="1" RelativeSize="32.10526315789474" IsNewNode="True">
+                <LayoutGroup Id="Item3" ShowCaption="False" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutItem Id="LegalAddress" ViewItem="LegalAddress" Index="0" RelativeSize="24.84472049689441" IsNewNode="True" />
+                  <LayoutItem Id="ActualAddress" ViewItem="ActualAddress" Index="1" RelativeSize="17.391304347826086" IsNewNode="True" />
+                  <LayoutItem Id="TelephoneNumber" ViewItem="TelephoneNumber" Index="2" RelativeSize="17.391304347826086" IsNewNode="True" />
+                  <LayoutItem Id="Email" ViewItem="Email" Index="3" RelativeSize="17.391304347826086" IsNewNode="True" />
+                  <LayoutItem Id="Other" ViewItem="Other" Index="4" RelativeSize="22.981366459627328" IsNewNode="True" />
+                </LayoutGroup>
+              </TabbedGroup>
+              <TabbedGroup Id="Item7" CaptionLocation="Top" Index="2" RelativeSize="18.94736842105263" IsNewNode="True">
+                <LayoutGroup Id="Item6" ShowCaption="False" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Item6" IsNewNode="True">
+                  <LayoutItem Id="Additional" ViewItem="Additional" Index="0" RelativeSize="100" IsNewNode="True" />
+                </LayoutGroup>
+              </TabbedGroup>
+              <LayoutGroup Id="SupplierClient_col1" Removed="True" />
+              <LayoutGroup Id="SupplierClient_col2" RelativeSize="50" Removed="True">
+                <LayoutItem Id="ActualAddress" RelativeSize="6.0046189376443415" />
+                <LayoutItem Id="Additional" RelativeSize="61.66281755196305" />
+                <LayoutItem Id="Email" RelativeSize="6.0046189376443415" />
+                <LayoutItem Id="LegalAddress" RelativeSize="6.0046189376443415" />
+                <LayoutItem Id="MainBankAccount" RelativeSize="8.314087759815243" />
+                <LayoutItem Id="Other" RelativeSize="6.0046189376443415" />
+                <LayoutItem Id="TelephoneNumber" RelativeSize="6.0046189376443415" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Warehouse_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Warehouse" RelativeSize="100" Direction="Vertical">
+              <TabbedGroup Id="Item2" CaptionLocation="Top" Index="0" RelativeSize="56.76274944567628" IsNewNode="True">
+                <LayoutGroup Id="Warehouse_col1" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutItem Id="FullName" ViewItem="FullName" Index="0" RelativeSize="15.929203539823009" IsNewNode="True" />
+                  <LayoutItem Id="UniqueCode" ViewItem="UniqueCode" Index="1" RelativeSize="11.504424778761061" IsNewNode="True" />
+                  <LayoutItem Id="OwnerParent" ViewItem="OwnerParent" Index="2" RelativeSize="11.504424778761061" IsNewNode="True" />
+                  <LayoutItem Id="Division" ViewItem="Division" Index="3" RelativeSize="11.504424778761061" IsNewNode="True" />
+                  <LayoutItem Id="Organization" ViewItem="Organization" Index="4" RelativeSize="11.504424778761061" IsNewNode="True" />
+                  <LayoutItem Id="Responsible" ViewItem="Responsible" Index="5" RelativeSize="11.504424778761061" IsNewNode="True" />
+                  <LayoutItem Id="CreatedDate" ViewItem="CreatedDate" Index="6" RelativeSize="11.504424778761061" IsNewNode="True" />
+                  <LayoutItem Id="CreatedUser" ViewItem="CreatedUser" Index="7" RelativeSize="15.044247787610619" IsNewNode="True" />
+                </LayoutGroup>
+              </TabbedGroup>
+              <TabbedGroup Id="Item1" CaptionLocation="Top" Index="1" RelativeSize="43.23725055432372" IsNewNode="True">
+                <LayoutGroup Id="Warehouse_col2" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutItem Id="ActualAddress" ViewItem="ActualAddress" Index="0" RelativeSize="21.818181818181817" IsNewNode="True" />
+                  <LayoutItem Id="TelephoneNumber" ViewItem="TelephoneNumber" Index="1" RelativeSize="78.18181818181819" IsNewNode="True" />
+                </LayoutGroup>
+              </TabbedGroup>
+              <LayoutGroup Id="Warehouse_col1" RelativeSize="48.59154929577465" Removed="True">
+                <LayoutItem Id="Division" RelativeSize="5.764966740576496" />
+                <LayoutItem Id="FullName" RelativeSize="7.982261640798226" />
+                <LayoutItem Id="Organization" RelativeSize="74.72283813747228" />
+                <LayoutItem Id="OwnerParent" RelativeSize="5.764966740576496" />
+                <LayoutItem Id="UniqueCode" RelativeSize="5.764966740576496" />
+              </LayoutGroup>
+              <LayoutGroup Id="Warehouse_col2" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
   </Views>
 </Application>

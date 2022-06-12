@@ -33,19 +33,48 @@ namespace ERPGE.Module.BusinessObjects
             base.AfterConstruction();
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
-        //private string _PersistentProperty;
-        //[XafDisplayName("My display name"), ToolTip("My hint message")]
-        //[ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)]
-        //[Persistent("DatabaseColumnName"), RuleRequiredField(DefaultContexts.Save)]
-        //public string PersistentProperty {
-        //    get { return _PersistentProperty; }
-        //    set { SetPropertyValue(nameof(PersistentProperty), ref _PersistentProperty, value); }
-        //}
 
-        //[Action(Caption = "My UI Action", ConfirmationMessage = "Are you sure?", ImageName = "Attention", AutoCommit = true)]
-        //public void ActionMethod() {
-        //    // Trigger a custom business logic for the current record in the UI (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112619.aspx).
-        //    this.PersistentProperty = "Paid";
-        //}
+        int uniqueCode;
+        int symbolCode;
+        int currencyCode;
+        int createdUser;
+        DateTime createdDate;
+        string fullName;
+
+        public string FullName
+        {
+            get => fullName;
+            set => SetPropertyValue(nameof(FullName), ref fullName, value);
+        }
+        
+        public int UniqueCode
+        {
+            get => uniqueCode;
+            set => SetPropertyValue(nameof(UniqueCode), ref uniqueCode, value);
+        }
+
+        public int CurrencyCode
+        {
+            get => currencyCode;
+            set => SetPropertyValue(nameof(CurrencyCode), ref currencyCode, value);
+        }
+
+        
+        public int SymbolCode
+        {
+            get => symbolCode;
+            set => SetPropertyValue(nameof(SymbolCode), ref symbolCode, value);
+        }
+        public DateTime CreatedDate
+        {
+            get => createdDate;
+            set => SetPropertyValue(nameof(CreatedDate), ref createdDate, value);
+        }
+
+        public int CreatedUser
+        {
+            get => createdUser;
+            set => SetPropertyValue(nameof(CreatedUser), ref createdUser, value);
+        }
     }
 }

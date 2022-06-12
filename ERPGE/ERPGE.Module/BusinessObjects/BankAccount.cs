@@ -33,19 +33,43 @@ namespace ERPGE.Module.BusinessObjects
             base.AfterConstruction();
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
-        //private string _PersistentProperty;
-        //[XafDisplayName("My display name"), ToolTip("My hint message")]
-        //[ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)]
-        //[Persistent("DatabaseColumnName"), RuleRequiredField(DefaultContexts.Save)]
-        //public string PersistentProperty {
-        //    get { return _PersistentProperty; }
-        //    set { SetPropertyValue(nameof(PersistentProperty), ref _PersistentProperty, value); }
-        //}
 
-        //[Action(Caption = "My UI Action", ConfirmationMessage = "Are you sure?", ImageName = "Attention", AutoCommit = true)]
-        //public void ActionMethod() {
-        //    // Trigger a custom business logic for the current record in the UI (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112619.aspx).
-        //    this.PersistentProperty = "Paid";
-        //}
+        int accountNumber;
+        string bank;
+        string name;
+        string bIC;
+
+        string owner;
+
+        public string Owner
+        {
+            get => owner;
+            set => SetPropertyValue(nameof(Owner), ref owner, value);
+        }
+
+        
+        public int AccountNumber
+        {
+            get => accountNumber;
+            set => SetPropertyValue(nameof(AccountNumber), ref accountNumber, value);
+        }
+
+        public string BIC
+        {
+            get => bIC;
+            set => SetPropertyValue(nameof(BIC), ref bIC, value);
+        }
+
+        public string Name
+        {
+            get => name;
+            set => SetPropertyValue(nameof(Name), ref name, value);
+        }
+
+        public string Bank
+        {
+            get => bank;
+            set => SetPropertyValue(nameof(Bank), ref bank, value);
+        }
     }
 }

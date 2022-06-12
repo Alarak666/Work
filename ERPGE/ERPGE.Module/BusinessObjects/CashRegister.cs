@@ -33,19 +33,57 @@ namespace ERPGE.Module.BusinessObjects
             base.AfterConstruction();
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
-        //private string _PersistentProperty;
-        //[XafDisplayName("My display name"), ToolTip("My hint message")]
-        //[ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)]
-        //[Persistent("DatabaseColumnName"), RuleRequiredField(DefaultContexts.Save)]
-        //public string PersistentProperty {
-        //    get { return _PersistentProperty; }
-        //    set { SetPropertyValue(nameof(PersistentProperty), ref _PersistentProperty, value); }
-        //}
+        int createdUser;
+        DateTime createdDate;
+        string currency;
+        string organization;
+        string division;
+        string ownerParent;
+        int uniqueCode;
+        string fullName;
 
-        //[Action(Caption = "My UI Action", ConfirmationMessage = "Are you sure?", ImageName = "Attention", AutoCommit = true)]
-        //public void ActionMethod() {
-        //    // Trigger a custom business logic for the current record in the UI (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112619.aspx).
-        //    this.PersistentProperty = "Paid";
-        //}
-    }
+        public string FullName
+        {
+            get => fullName;
+            set => SetPropertyValue(nameof(FullName), ref fullName, value);
+        }
+
+        public int UniqueCode
+        {
+            get => uniqueCode;
+            set => SetPropertyValue(nameof(UniqueCode), ref uniqueCode, value);
+        }
+
+        public string OwnerParent //?
+        {
+            get => ownerParent;
+            set => SetPropertyValue(nameof(OwnerParent), ref ownerParent, value);
+        }
+        public string Organization
+        {
+            get => organization;
+            set => SetPropertyValue(nameof(Organization), ref organization, value);
+        }
+        public string Currency
+        {
+            get => currency;
+            set => SetPropertyValue(nameof(Currency), ref currency, value);
+        }
+        public string Division
+        {
+            get => division;
+            set => SetPropertyValue(nameof(Division), ref division, value);
+        }
+        public DateTime CreatedDate
+        {
+            get => createdDate;
+            set => SetPropertyValue(nameof(CreatedDate), ref createdDate, value);
+        }
+
+        public int CreatedUser
+        {
+            get => createdUser;
+            set => SetPropertyValue(nameof(CreatedUser), ref createdUser, value);
+        }
+      }
 }

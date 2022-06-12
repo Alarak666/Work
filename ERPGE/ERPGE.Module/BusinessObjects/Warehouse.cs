@@ -33,19 +33,76 @@ namespace ERPGE.Module.BusinessObjects
             base.AfterConstruction();
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
-        //private string _PersistentProperty;
-        //[XafDisplayName("My display name"), ToolTip("My hint message")]
-        //[ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)]
-        //[Persistent("DatabaseColumnName"), RuleRequiredField(DefaultContexts.Save)]
-        //public string PersistentProperty {
-        //    get { return _PersistentProperty; }
-        //    set { SetPropertyValue(nameof(PersistentProperty), ref _PersistentProperty, value); }
-        //}
 
-        //[Action(Caption = "My UI Action", ConfirmationMessage = "Are you sure?", ImageName = "Attention", AutoCommit = true)]
-        //public void ActionMethod() {
-        //    // Trigger a custom business logic for the current record in the UI (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112619.aspx).
-        //    this.PersistentProperty = "Paid";
-        //}
+        string telephoneNumber;
+        string actualAddress;
+        int createdUser;
+        DateTime createdDate;
+        string responsible;
+        string organization;
+        Division division;
+        string ownerParent;
+        int uniqueCode;
+        string fullName;
+
+        public string FullName
+        {
+            get => fullName;
+            set => SetPropertyValue(nameof(FullName), ref fullName, value);
+        }
+
+        public int UniqueCode
+        {
+            get => uniqueCode;
+            set => SetPropertyValue(nameof(UniqueCode), ref uniqueCode, value);
+        }
+
+        public string OwnerParent //?
+        {
+            get => ownerParent;
+            set => SetPropertyValue(nameof(OwnerParent), ref ownerParent, value);
+        }
+
+        public Division Division
+        {
+            get => division;
+            set => SetPropertyValue(nameof(Division), ref division, value);
+        }
+
+        public string Organization
+        {
+            get => organization;
+            set => SetPropertyValue(nameof(Organization), ref organization, value);
+        }
+
+        public string Responsible
+        {
+            get => responsible;
+            set => SetPropertyValue(nameof(Responsible), ref responsible, value);
+        }
+
+        public DateTime CreatedDate
+        {
+            get => createdDate;
+            set => SetPropertyValue(nameof(CreatedDate), ref createdDate, value);
+        }
+
+        public int CreatedUser
+        {
+            get => createdUser;
+            set => SetPropertyValue(nameof(CreatedUser), ref createdUser, value);
+        }
+
+        public string ActualAddress
+        {
+            get => actualAddress;
+            set => SetPropertyValue(nameof(ActualAddress), ref actualAddress, value);
+        }
+        
+        public string TelephoneNumber
+        {
+            get => telephoneNumber;
+            set => SetPropertyValue(nameof(TelephoneNumber), ref telephoneNumber, value);
+        }
     }
 }

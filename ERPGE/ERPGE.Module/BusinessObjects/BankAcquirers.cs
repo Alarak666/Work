@@ -36,31 +36,31 @@ namespace ERPGE.Module.BusinessObjects
         string createdUSer;
         DateTime createdDate;
         string acquirer;
-        string terminalNumber;
+        int terminalNumber;
         string bankAccount;
         string organization;
-        string owner;
-        string uniqueCode;
-        object fullName;
+        string ownerParent;
+        int  uniqueCode;
+        string fullName;
         [XafDisplayName("FullName"), ToolTip("Message")]
-        public object FullName
+        public string FullName
         {
             get => fullName;
             set => SetPropertyValue(nameof(FullName), ref fullName, value);
         }
         [XafDisplayName("UniqueCode"), ToolTip("Message")]
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        public string UniqueCode
+        public int UniqueCode
         {
             get => uniqueCode;
             set => SetPropertyValue(nameof(UniqueCode), ref uniqueCode, value);
         }
 
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        public string Owner
+        public string OwnerParent
         {
-            get => owner;
-            set => SetPropertyValue(nameof(Owner), ref owner, value);
+            get => ownerParent;
+            set => SetPropertyValue(nameof(OwnerParent), ref ownerParent, value);
         }
 
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
@@ -78,7 +78,7 @@ namespace ERPGE.Module.BusinessObjects
         }
 
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        public string TerminalNumber
+        public int TerminalNumber
         {
             get => terminalNumber;
             set => SetPropertyValue(nameof(TerminalNumber), ref terminalNumber, value);
@@ -99,10 +99,10 @@ namespace ERPGE.Module.BusinessObjects
         }
 
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        public string CreatedUSer
+        public string CreatedUser
         {
             get => createdUSer;
-            set => SetPropertyValue(nameof(CreatedUSer), ref createdUSer, value);
+            set => SetPropertyValue(nameof(CreatedUser), ref createdUSer, value);
         }
     }
 }

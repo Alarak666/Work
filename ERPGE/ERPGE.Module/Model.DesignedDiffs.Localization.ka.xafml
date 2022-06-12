@@ -17,16 +17,104 @@
         <Member Name="Oid" Caption="Oid" />
       </OwnMembers>
     </Class>
-    <Class Name="ERPGE.Module.BusinessObjects.BankAcquirers">
+    <Class Name="ERPGE.Module.BusinessObjects.BankAccount" Caption="საბანკო ანგარიში">
       <OwnMembers>
-        <Member Name="FullName" Caption="სრული დასახელება" />
+        <Member Name="AccountNumber" Caption="ანგარიშის ნომერი" />
+        <Member Name="Bank" Caption="ბანკი" />
+        <Member Name="BIC" Caption="ბანკის კოდი" />
+        <Member Name="Name" Caption="დასახელება" />
+        <Member Name="Owner" Caption="მფლობელი" />
       </OwnMembers>
     </Class>
-    <Class Name="ERPGE.Module.BusinessObjects.Company" Caption="Company">
+    <Class Name="ERPGE.Module.BusinessObjects.BankAcquirers" Caption="საბანკო ტერმინალი">
       <OwnMembers>
-        <Member Name="Description" Caption="Description" />
+        <Member Name="Acquirer" Caption="ეკვაიერი" />
+        <Member Name="BankAccount" Caption="საბანკო ანგარიში" />
+        <Member Name="CreatedDate" Caption="რეგისტრაციის თარიღი" />
+        <Member Name="CreatedUser" Caption="რეგისტრაციის ავტორი" />
+        <Member Name="FullName" Caption="დასახელება" />
+        <Member Name="Organization" Caption="ორგანიზაცია" />
+        <Member Name="OwnerParent" Caption="მფლობელი" />
+        <Member Name="TerminalNumber" Caption="ტერმინალის ნომერი" />
+        <Member Name="UniqueCode" Caption="კოდი" />
+      </OwnMembers>
+    </Class>
+    <Class Name="ERPGE.Module.BusinessObjects.CashRegister" Caption="სალარო">
+      <OwnMembers>
+        <Member Name="CreatedDate" Caption="რეგისტრაციის თარიღი" />
+        <Member Name="CreatedUser" Caption="რეგისტრაციის ავტორი" />
+        <Member Name="Currency" Caption="ვალუტა" />
+        <Member Name="Division" Caption="ქვეგანყოფილება" />
+        <Member Name="FullName" Caption="დასახელება" />
+        <Member Name="Organization" Caption="ორგანიზაცია" />
+        <Member Name="OwnerParent" Caption="მფლობელი" />
+        <Member Name="UniqueCode" Caption="კოდი" />
+      </OwnMembers>
+    </Class>
+    <Class Name="ERPGE.Module.BusinessObjects.Company" Caption="ორგანიზაცია">
+      <OwnMembers>
+        <Member Name="ActualAddress" Caption="ფაქტიური მისამართი" />
+        <Member Name="BankAccount" Caption="საბანკო ანგარიში" />
+        <Member Name="Description" Caption="აღწერა" />
+        <Member Name="Email" Caption="ელ. ფოსტა" />
         <Member Name="FullName" Caption="სრული დასახელება" />
-        <Member Name="RegistrationDate" Caption="RegistrationDate" />
+        <Member Name="LegalAddress" Caption="იურიდიული მისამართი" />
+        <Member Name="LegalForm" Caption="სამართლებრივი ფორმა" />
+        <Member Name="RegistrationDate" Caption="რეგისტრაციის თარიღი" />
+        <Member Name="TelephoneNumber" Caption="ტელეფონის ნომერი" />
+        <Member Name="Tin" Caption="ს/ნ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="ERPGE.Module.BusinessObjects.Currencies" Caption="ვალუტები">
+      <OwnMembers>
+        <Member Name="CreatedDate" Caption="რეგისტრაციის თარიღი" />
+        <Member Name="CreatedUser" Caption="რეგისტრაციის ავტორი" />
+        <Member Name="CurrencyCode" Caption="კურსის ციფრული კოდი" />
+        <Member Name="FullName" Caption="დასახელება" />
+        <Member Name="SymbolCode" Caption="კურსის სიმბოლური კოდი" />
+        <Member Name="UniqueCode" Caption="უნიკალური კოდი" />
+      </OwnMembers>
+    </Class>
+    <Class Name="ERPGE.Module.BusinessObjects.Division" Caption="ქვეგანყოფილება">
+      <OwnMembers>
+        <Member Name="CreatedDate" Caption="რეგისტრაციის თარიღი" />
+        <Member Name="CreatedUser" Caption="რეგისტრაციის ავტორი" />
+        <Member Name="FullName" Caption="დასახელება" />
+        <Member Name="OwnerParent" Caption="მფლობელი" />
+        <Member Name="ParentDivision" Caption="ზემდგომი ქვეგანყოფილება" />
+        <Member Name="UniqueCode" Caption="კოდი" />
+      </OwnMembers>
+    </Class>
+    <Class Name="ERPGE.Module.BusinessObjects.SupplierClient" Caption="მომწოდებელი/მყიდველი">
+      <OwnMembers>
+        <Member Name="ActualAddress" Caption="ფაქტობრივი მისამართი" />
+        <Member Name="Additional" Caption="დამატებით" />
+        <Member Name="Country" Caption="ქვეყანა" />
+        <Member Name="Description" Caption="დასახელება" />
+        <Member Name="Email" Caption="ელ.ფოსტა" />
+        <Member Name="FullName" Caption="დასახელება" />
+        <Member Name="LegalAddress" Caption="იურიდიული მისამართი" />
+        <Member Name="LegalForm" Caption="სამართლებრივი ფორმა" />
+        <Member Name="MainBankAccount" Caption="ძირითადი საბანკო ანგარიში" />
+        <Member Name="Other" Caption="სხვა" />
+        <Member Name="Parent" Caption="ჯგუფი" />
+        <Member Name="TelephoneNumber" Caption="ტელეფონის ნომერი" />
+        <Member Name="TIN" Caption="ს/კ" />
+        <Member Name="VatTaxable" Caption="დღგ-ით დაბეგვრა" />
+      </OwnMembers>
+    </Class>
+    <Class Name="ERPGE.Module.BusinessObjects.Warehouse" Caption="საწყობი">
+      <OwnMembers>
+        <Member Name="ActualAddress" Caption="ფაქტობრივი მისამართი" />
+        <Member Name="CreatedDate" Caption="რეგისტრაციის თარიღი" />
+        <Member Name="CreatedUser" Caption="რეგისტრაციის ავტორი" />
+        <Member Name="Division" Caption="ქვეგანყოფილება" />
+        <Member Name="FullName" Caption="დასახელება" />
+        <Member Name="Organization" Caption="ორგანიზაცია" />
+        <Member Name="OwnerParent" Caption="მფლობელი" />
+        <Member Name="Responsible" Caption="პასუხისმგებელი" />
+        <Member Name="TelephoneNumber" Caption="ტელეფონის ნომერი" />
+        <Member Name="UniqueCode" Caption="კოდი" />
       </OwnMembers>
     </Class>
   </BOModel>
@@ -46,11 +134,39 @@
         <ColumnInfo Id="Description" Caption="აღწერა" />
       </Columns>
     </ListView>
-    <DetailView Id="BankAcquirers_DetailView">
+    <DetailView Id="BankAccount_DetailView" Caption="საბანკო ანგარიში">
       <Items>
-        <PropertyEditor Id="BankAccount" Caption="საბანკო ანგარიში" />
-        <PropertyEditor Id="FullName" Caption="სრული დასახელება" />
+        <PropertyEditor Id="Bank" Caption="ბანკი" />
+        <PropertyEditor Id="BIC" Caption="ბანკის კოდი" />
+        <PropertyEditor Id="Name" Caption="დასახელება" />
+        <PropertyEditor Id="Owner" Caption="მფლობელი" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BankAccount" Caption="საბანკო ანგარიში" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BankAcquirers_DetailView" Caption="საბანკო ტერმინალი">
+      <Items>
+        <PropertyEditor Id="Acquirer" Caption="ეკვაიერი" />
+        <PropertyEditor Id="BankAccount" Caption="საბანკო ანგარიში" />
+        <PropertyEditor Id="CreatedDate" Caption="რეგისტრაციის თარიღი" />
+        <PropertyEditor Id="FullName" Caption="დასახელება" />
+        <PropertyEditor Id="Organization" Caption="ორგანიზაცია" />
+        <PropertyEditor Id="OwnerParent" Caption="მფლობელი" />
+        <PropertyEditor Id="TerminalNumber" Caption="ტერმინალის ნომერი" />
+        <PropertyEditor Id="UniqueCode" Caption="კოდი" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BankAcquirers" Caption="საბანკო ტერმინალი" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
     </DetailView>
     <ListView Id="BankAcquirers_ListView">
       <Columns>
@@ -63,28 +179,54 @@
         <ColumnInfo Id="FullName" Caption="სრული დასახელება" />
       </Columns>
     </ListView>
-    <DetailView Id="Company_DetailView">
+    <DetailView Id="CashRegister_DetailView" Caption="სალარო">
+      <Items>
+        <PropertyEditor Id="CreatedDate" Caption="რეგისტრაციის თარიღი" />
+        <PropertyEditor Id="CreatedUser" Caption="რეგისტრაციის ავტორი" />
+        <PropertyEditor Id="Currency" Caption="ვალუტა" />
+        <PropertyEditor Id="Division" Caption="ქვეგანყოფილება" />
+        <PropertyEditor Id="FullName" Caption="დასახელება" />
+        <PropertyEditor Id="Organization" Caption="ორგანიზაცია" />
+        <PropertyEditor Id="OwnerParent" Caption="მფლობელი" />
+        <PropertyEditor Id="UniqueCode" Caption="კოდი" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="CashRegister" Caption="სალარო" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Company_DetailView" Caption="ორგანიზაცია ">
       <Items>
         <PropertyEditor Id="ActualAddress" Caption="ფაქტიური მისამართი" />
         <PropertyEditor Id="BankAccount" Caption="საბანკო ანგარიში" />
-        <PropertyEditor Id="Description" Caption="Description" />
+        <PropertyEditor Id="Description" Caption="აღწერა" />
         <PropertyEditor Id="Email" Caption="ელ. ფოსტა" />
         <PropertyEditor Id="FullName" Caption="სრული დასახელება" />
         <PropertyEditor Id="LegalAddress" Caption="იურიდიული მისამართი" />
         <PropertyEditor Id="LegalForm" Caption="სამართლებრივი ფორმა" />
-        <PropertyEditor Id="RegistrationDate" Caption="RegistrationDate" />
+        <PropertyEditor Id="RegistrationDate" Caption="რეგისტრაციის თარიღი" />
         <PropertyEditor Id="TelephoneNumber" Caption="ტელეფონის ნომერი" />
         <PropertyEditor Id="Tin" Caption="ს/ნ" />
       </Items>
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="Company" Caption="Company" />
+            <LayoutGroup Id="Company" Caption="ორგანიზაცია ">
+              <TabbedGroup Id="Item2">
+                <LayoutGroup Id="Company_col1" Caption="Company_col1(5)" />
+              </TabbedGroup>
+              <TabbedGroup Id="Item3">
+                <LayoutGroup Id="Company_col2" Caption="Company_col2(13)" />
+              </TabbedGroup>
+            </LayoutGroup>
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="Company_ListView">
+    <ListView Id="Company_ListView" Caption="ორგანიზაცია ">
       <Columns>
         <ColumnInfo Id="FullName" Caption="სრული დასახელება" />
         <ColumnInfo Id="Description" Caption="აღწერა" />
@@ -103,10 +245,97 @@
         <ColumnInfo Id="FullName" Caption="სრული დასახელება" />
       </Columns>
     </ListView>
+    <DetailView Id="Currencies_DetailView" Caption="ვალუტები">
+      <Items>
+        <PropertyEditor Id="CreatedDate" Caption="რეგისტრაციის თარიღი" />
+        <PropertyEditor Id="CreatedUser" Caption="რეგისტრაციის ავტორი" />
+        <PropertyEditor Id="CurrencyCode" Caption="კურსის ციფრული კოდი" />
+        <PropertyEditor Id="FullName" Caption="დასახელება" />
+        <PropertyEditor Id="SymbolCode" Caption="კურსის სიმბოლური კოდი" />
+        <PropertyEditor Id="UniqueCode" Caption="უნიკალური კოდი" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Currencies" Caption="ვალუტები" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Division_DetailView" Caption="ქვეგანყოფილება">
+      <Items>
+        <PropertyEditor Id="CreatedDate" Caption="რეგისტრაციის თარიღი" />
+        <PropertyEditor Id="CreatedUser" Caption="რეგისტრაციის ავტორი" />
+        <PropertyEditor Id="FullName" Caption="დასახელება" />
+        <PropertyEditor Id="OwnerParent" Caption="მფლობელი" />
+        <PropertyEditor Id="ParentDivision" Caption="ზემდგომი " />
+        <PropertyEditor Id="UniqueCode" Caption="კოდი" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Division" Caption="ქვეგანყოფილება" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
       <Columns>
         <ColumnInfo Id="ErrorMessage" Caption="Description" />
       </Columns>
     </ListView>
+    <DetailView Id="SupplierClient_DetailView" Caption="მომწოდებელი/მყიდველი">
+      <Items>
+        <PropertyEditor Id="ActualAddress" Caption="ფაქტობრივი მისამართი" />
+        <PropertyEditor Id="Additional" Caption="დამატებით" />
+        <PropertyEditor Id="Country" Caption="ქვეყანა" />
+        <PropertyEditor Id="Description" Caption="დასახელება" />
+        <PropertyEditor Id="Email" Caption="ელ.ფოსტა" />
+        <PropertyEditor Id="FullName" Caption="სრული დასახელება" />
+        <PropertyEditor Id="LegalAddress" Caption="იურიდიული მისამართი" />
+        <PropertyEditor Id="LegalForm" Caption="სამართლებრივი ფორმა" />
+        <PropertyEditor Id="MainBankAccount" Caption="ძირითადი საბანკო ანგარიში" />
+        <PropertyEditor Id="Other" Caption="სხვა" />
+        <PropertyEditor Id="Parent" Caption="ჯგუფი" />
+        <PropertyEditor Id="TelephoneNumber" Caption="ტელეფონის ნომერი" />
+        <PropertyEditor Id="TIN" Caption="ს/კ" />
+        <PropertyEditor Id="VatTaxable" Caption="დღგ-ით დაბეგვრა" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="SupplierClient" Caption="მომწოდებელი/მყიდველი" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Warehouse_DetailView" Caption="საწყობი">
+      <Items>
+        <PropertyEditor Id="ActualAddress" Caption="ფაქტობრივი მისამართი" />
+        <PropertyEditor Id="CreatedDate" Caption="რეგისტრაციის თარიღი" />
+        <PropertyEditor Id="CreatedUser" Caption="რეგისტრაციის ავტორი" />
+        <PropertyEditor Id="Division" Caption="ქვეგანყოფილება" />
+        <PropertyEditor Id="FullName" Caption="დასახელება" />
+        <PropertyEditor Id="Organization" Caption="ორგანიზაცია" />
+        <PropertyEditor Id="OwnerParent" Caption="მფლობელი" />
+        <PropertyEditor Id="Responsible" Caption="პასუხისმგებელი" />
+        <PropertyEditor Id="TelephoneNumber" Caption="ტელეფონის ნომერი" />
+        <PropertyEditor Id="UniqueCode" Caption="კოდი" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Warehouse" Caption="საწყობი">
+              <TabbedGroup Id="Item2">
+                <LayoutGroup Id="Warehouse_col1" Caption="Warehouse_col1(4)" />
+              </TabbedGroup>
+              <TabbedGroup Id="Item1">
+                <LayoutGroup Id="Warehouse_col2" Caption="Warehouse_col2(10)" />
+              </TabbedGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
   </Views>
 </Application>

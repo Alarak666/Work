@@ -39,7 +39,7 @@ namespace ERPGE.Module.BusinessObjects
         string organization;
         string division;
         string ownerParent;
-        int uniqueCode;
+        string uniqueCode;
         string fullName;
 
         public string FullName
@@ -48,7 +48,7 @@ namespace ERPGE.Module.BusinessObjects
             set => SetPropertyValue(nameof(FullName), ref fullName, value);
         }
 
-        public int UniqueCode
+        public string UniqueCode
         {
             get => uniqueCode;
             set => SetPropertyValue(nameof(UniqueCode), ref uniqueCode, value);

@@ -40,7 +40,7 @@ namespace ERPGE.Module.BusinessObjects
         string bankAccount;
         string organization;
         string ownerParent;
-        int  uniqueCode;
+        string uniqueCode;
         string fullName;
         [XafDisplayName("FullName"), ToolTip("Message")]
         public string FullName
@@ -50,7 +50,7 @@ namespace ERPGE.Module.BusinessObjects
         }
         [XafDisplayName("UniqueCode"), ToolTip("Message")]
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        public int UniqueCode
+        public string UniqueCode
         {
             get => uniqueCode;
             set => SetPropertyValue(nameof(UniqueCode), ref uniqueCode, value);

@@ -20,6 +20,8 @@ namespace ERPGE.Module.BusinessObjects
     //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
     //[Persistent("DatabaseTableName")]
     // Specify more UI options using a declarative approach (https://documentation.devexpress.com/#eXpressAppFramework/CustomDocument112701).
+  
+    [System.ComponentModel.DefaultProperty(nameof(FullName))]
     public class Company : BaseObject
     { // Inherit from a different class to provide a custom primary key, concurrency and deletion behavior, etc. (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument113146.aspx).
         // Use CodeRush to create XPO classes and properties with a few keystrokes.
@@ -43,7 +45,7 @@ namespace ERPGE.Module.BusinessObjects
         DateTime registrationDate;
         string description;
         string fullName;
-
+        [RuleRequiredField(DefaultContexts.Save)]
         public string FullName
         {
             get => fullName;

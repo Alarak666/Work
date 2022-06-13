@@ -34,7 +34,7 @@ namespace ERPGE.Module.BusinessObjects
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
 
-        int uniqueCode;
+        string uniqueCode;
         int symbolCode;
         int currencyCode;
         int createdUser;
@@ -47,7 +47,7 @@ namespace ERPGE.Module.BusinessObjects
             set => SetPropertyValue(nameof(FullName), ref fullName, value);
         }
         
-        public int UniqueCode
+        public string UniqueCode
         {
             get => uniqueCode;
             set => SetPropertyValue(nameof(UniqueCode), ref uniqueCode, value);
